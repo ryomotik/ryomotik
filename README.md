@@ -73,24 +73,22 @@ Equipped Gear :
 
 <div align="center">
 
-### 🏆 3D Trophies of Aincrad [GitHub Achievements]
+### 🏆 3D Trophies of Aincrad [Battle Achievements]
 
-<a href="https://github.com/ryomotik">
-  <img src="https://github-profile-trophy.vercel.app/?username=ryomotik&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="Trophies" />
-</a>
-
-<br/>
+<p align="center">
+  <img src="assets/aincrad-trophies.svg" width="100%" alt="3D Aincrad Trophies" />
+</p>
 
 <!-- SAO Animated Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ### 🎵 SAO Holographic Audio Stream
 
-```text
-▶ Now Playing: Yuki Kajiura — 「 Swordland 」 (SAO Main Battle Theme)
-01:43 ━━━━━━━━━━━━━━━━━━━━●────────── 03:15
-               ⇆ㅤㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤㅤ↻
-```
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=1xKjO7S1pC8" target="_blank" title="Play Swordland on YouTube">
+    <img src="assets/sao-music-player.svg" width="100%" alt="SAO Holographic Music Stream" />
+  </a>
+</p>
 
 ---
 
