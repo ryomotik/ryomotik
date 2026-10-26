@@ -42,7 +42,7 @@
       @keyframes eq3 { 0%, 100% { height: 10px; y: 18px; } 50% { height: 28px; y: 0px; } }
       @keyframes eq4 { 0%, 100% { height: 26px; y: 2px; } 50% { height: 6px; y: 22px; } }
       @keyframes eq5 { 0%, 100% { height: 14px; y: 14px; } 50% { height: 24px; y: 4px; } }
-      @keyframes pulseThumb { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.2); opacity: 1; } }
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; filter: drop-shadow(0 0 5px #00FFFF); } }
       
       .spin { transform-origin: 60px 67.5px; animation: spinVinyl 6s linear infinite; }
       .bar-a { animation: eq1 1.0s ease-in-out infinite; }
@@ -50,7 +50,7 @@
       .bar-c { animation: eq3 1.2s ease-in-out infinite; }
       .bar-d { animation: eq4 0.9s ease-in-out infinite; }
       .bar-e { animation: eq5 1.1s ease-in-out infinite; }
-      .thumb { transform-origin: 260px 84px; animation: pulseThumb 2s ease-in-out infinite; }
+      .thumb { animation: pulseGlow 2s ease-in-out infinite; }
 
       .song-title { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #FFFFFF; letter-spacing: 0.5px; }
       .song-desc { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 11.5px; font-weight: 500; fill: #C084FC; }

@@ -73,10 +73,10 @@ Equipped Gear :
 
 <div align="center">
 
-### 🏆 3D Trophies of Aincrad [Battle Achievements]
+### 🏆 Aincrad Floor 100 Boss Defeat & Loot Records
 
 <p align="center">
-  <img src="assets/aincrad-trophies.svg" width="650" alt="3D Aincrad Trophies" />
+  <img src="assets/sao-boss-clear.svg" width="650" alt="SAO Boss Clear Records" />
 </p>
 
 <!-- SAO Animated Divider -->
