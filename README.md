@@ -76,7 +76,7 @@ Equipped Gear :
 ### 🏆 3D Trophies of Aincrad [Battle Achievements]
 
 <p align="center">
-  <img src="assets/aincrad-trophies.svg" width="100%" alt="3D Aincrad Trophies" />
+  <img src="assets/aincrad-trophies.svg" width="650" alt="3D Aincrad Trophies" />
 </p>
 
 <!-- SAO Animated Divider -->
@@ -86,7 +86,7 @@ Equipped Gear :
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=1xKjO7S1pC8" target="_blank" title="Play Swordland on YouTube">
-    <img src="assets/sao-music-player.svg" width="100%" alt="SAO Holographic Music Stream" />
+    <img src="assets/sao-music-player.svg" width="650" alt="SAO Holographic Music Stream" />
   </a>
 </p>
 

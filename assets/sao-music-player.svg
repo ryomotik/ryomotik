@@ -1,38 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="150" viewBox="0 0 680 150" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="135" viewBox="0 0 650 135" fill="none">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0d14"/>
-      <stop offset="50%" stop-color="#121124"/>
-      <stop offset="100%" stop-color="#090a10"/>
+    <linearGradient id="deckBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F0F1A"/>
+      <stop offset="50%" stop-color="#141126"/>
+      <stop offset="100%" stop-color="#0A0A10"/>
     </linearGradient>
 
-    <!-- Border Glow Gradient -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Border Gradient -->
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8A2BE2"/>
       <stop offset="50%" stop-color="#00FFFF"/>
-      <stop offset="100%" stop-color="#9945FF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
     </linearGradient>
 
-    <!-- Progress Bar Gradient -->
-    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Progress Gradient -->
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#7928CA"/>
-      <stop offset="50%" stop-color="#9B51E0"/>
+      <stop offset="60%" stop-color="#9B51E0"/>
       <stop offset="100%" stop-color="#00FFFF"/>
     </linearGradient>
 
-    <!-- Vinyl Disc Gradient -->
-    <radialGradient id="discGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1a1230"/>
-      <stop offset="60%" stop-color="#0d0e17"/>
-      <stop offset="90%" stop-color="#1e1838"/>
-      <stop offset="100%" stop-color="#2a2048"/>
+    <radialGradient id="vinylCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#24143D"/>
+      <stop offset="70%" stop-color="#0E0C17"/>
+      <stop offset="100%" stop-color="#1C1830"/>
     </radialGradient>
-
-    <!-- Drop Shadow Filter -->
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#8A2BE2" flood-opacity="0.3"/>
-    </filter>
 
     <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur" />
@@ -43,92 +36,102 @@
     </filter>
 
     <style>
-      @keyframes bounce1 { 0%, 100% { height: 6px; y: 24px; } 50% { height: 26px; y: 4px; } }
-      @keyframes bounce2 { 0%, 100% { height: 24px; y: 6px; } 50% { height: 8px; y: 22px; } }
-      @keyframes bounce3 { 0%, 100% { height: 12px; y: 18px; } 50% { height: 28px; y: 2px; } }
-      @keyframes bounce4 { 0%, 100% { height: 28px; y: 2px; } 50% { height: 8px; y: 22px; } }
-      @keyframes bounce5 { 0%, 100% { height: 16px; y: 14px; } 50% { height: 26px; y: 4px; } }
-      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      @keyframes pulse { 0%, 100% { opacity: 0.85; } 50% { opacity: 1; filter: drop-shadow(0 0 6px #00FFFF); } }
+      @keyframes spinVinyl { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes eq1 { 0%, 100% { height: 6px; y: 22px; } 50% { height: 26px; y: 2px; } }
+      @keyframes eq2 { 0%, 100% { height: 22px; y: 6px; } 50% { height: 8px; y: 20px; } }
+      @keyframes eq3 { 0%, 100% { height: 10px; y: 18px; } 50% { height: 28px; y: 0px; } }
+      @keyframes eq4 { 0%, 100% { height: 26px; y: 2px; } 50% { height: 6px; y: 22px; } }
+      @keyframes eq5 { 0%, 100% { height: 14px; y: 14px; } 50% { height: 24px; y: 4px; } }
+      @keyframes pulseThumb { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.2); opacity: 1; } }
       
-      .bar1 { animation: bounce1 1.05s ease-in-out infinite; }
-      .bar2 { animation: bounce2 0.85s ease-in-out infinite; }
-      .bar3 { animation: bounce3 1.25s ease-in-out infinite; }
-      .bar4 { animation: bounce4 0.95s ease-in-out infinite; }
-      .bar5 { animation: bounce5 1.15s ease-in-out infinite; }
-      .vinyl { transform-origin: 65px 75px; animation: spin 8s linear infinite; }
-      .glowing-dot { animation: pulse 2s ease-in-out infinite; }
-      .text-title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 16px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
-      .text-sub { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-size: 12px; font-weight: 400; fill: #C084FC; }
-      .text-meta { font-family: 'Consolas', monospace; font-size: 11px; fill: #7E869B; }
-      .text-controls { font-family: sans-serif; font-size: 17px; fill: #BB86FC; user-select: none; }
+      .spin { transform-origin: 60px 67.5px; animation: spinVinyl 6s linear infinite; }
+      .bar-a { animation: eq1 1.0s ease-in-out infinite; }
+      .bar-b { animation: eq2 0.8s ease-in-out infinite; }
+      .bar-c { animation: eq3 1.2s ease-in-out infinite; }
+      .bar-d { animation: eq4 0.9s ease-in-out infinite; }
+      .bar-e { animation: eq5 1.1s ease-in-out infinite; }
+      .thumb { transform-origin: 260px 84px; animation: pulseThumb 2s ease-in-out infinite; }
+
+      .song-title { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .song-desc { font-family: 'Segoe UI', -apple-system, sans-serif; font-size: 11.5px; font-weight: 500; fill: #C084FC; }
+      .time-code { font-family: 'Consolas', monospace; font-size: 10.5px; fill: #6B7280; }
     </style>
   </defs>
 
-  <!-- Outer Card Frame -->
-  <rect x="2" y="2" width="676" height="146" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.6" filter="url(#shadow)"/>
+  <!-- Frame with neon outline -->
+  <rect x="1.5" y="1.5" width="647" height="132" rx="14" fill="url(#deckBg)" stroke="url(#neonBorder)" stroke-width="1.5"/>
 
-  <!-- Left: Vinyl / Disc Album -->
-  <g class="vinyl">
-    <circle cx="65" cy="75" r="44" fill="url(#discGrad)" stroke="#4A3B69" stroke-width="2"/>
-    <circle cx="65" cy="75" r="32" fill="none" stroke="#251E3D" stroke-width="1" stroke-dasharray="3,3"/>
-    <circle cx="65" cy="75" r="22" fill="none" stroke="#352B55" stroke-width="1"/>
-    <!-- Center Label -->
-    <circle cx="65" cy="75" r="14" fill="#8A2BE2"/>
-    <circle cx="65" cy="75" r="5" fill="#0c0d14"/>
-  </g>
-  <!-- Mini Swords Badge inside disc -->
-  <text x="65" y="79" font-size="11" text-anchor="middle" fill="#FFFFFF">⚔️</text>
-
-  <!-- Equalizer Visualizer (Top Right) -->
-  <g transform="translate(615, 20)">
-    <rect class="bar1" x="0" y="24" width="3.5" height="6" rx="1.5" fill="#00FFFF"/>
-    <rect class="bar2" x="7" y="6" width="3.5" height="24" rx="1.5" fill="#8A2BE2"/>
-    <rect class="bar3" x="14" y="18" width="3.5" height="12" rx="1.5" fill="#C084FC"/>
-    <rect class="bar4" x="21" y="2" width="3.5" height="28" rx="1.5" fill="#00FFFF"/>
-    <rect class="bar5" x="28" y="14" width="3.5" height="16" rx="1.5" fill="#9945FF"/>
+  <!-- Left: Animated Vinyl Disc -->
+  <g class="spin">
+    <circle cx="60" cy="67.5" r="42" fill="url(#vinylCenter)" stroke="#3B2A59" stroke-width="2"/>
+    <circle cx="60" cy="67.5" r="30" fill="none" stroke="#221C38" stroke-width="1" stroke-dasharray="2,2"/>
+    <circle cx="60" cy="67.5" r="20" fill="none" stroke="#2D234A" stroke-width="1"/>
+    <!-- Center Core -->
+    <circle cx="60" cy="67.5" r="13" fill="#8A2BE2"/>
+    <circle cx="60" cy="67.5" r="4" fill="#0A0A10"/>
+    <!-- Crossed Swords Vector Logo inside center -->
+    <line x1="53" y1="74.5" x2="67" y2="60.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="67" y1="74.5" x2="53" y2="60.5" stroke="#00FFFF" stroke-width="1.8" stroke-linecap="round"/>
   </g>
 
-  <!-- Track Info -->
-  <g transform="translate(130, 26)">
-    <!-- High-Res Audio Badge -->
-    <rect x="0" y="0" width="138" height="18" rx="4" fill="#1C1833" stroke="#8A2BE2" stroke-width="0.8"/>
-    <text x="6" y="13" font-family="'Consolas', monospace" font-size="9" font-weight="700" fill="#00FFFF">▶ NOW PLAYING • HI-RES</text>
+  <!-- Equalizer Bars (Top Right) -->
+  <g transform="translate(585, 20)">
+    <rect class="bar-a" x="0" y="14" width="3.5" height="14" rx="1.5" fill="#00FFFF"/>
+    <rect class="bar-b" x="7" y="6" width="3.5" height="22" rx="1.5" fill="#8A2BE2"/>
+    <rect class="bar-c" x="14" y="16" width="3.5" height="12" rx="1.5" fill="#C084FC"/>
+    <rect class="bar-d" x="21" y="2" width="3.5" height="26" rx="1.5" fill="#00FFFF"/>
+    <rect class="bar-e" x="28" y="10" width="3.5" height="18" rx="1.5" fill="#A855F7"/>
+  </g>
 
-    <!-- Track Title -->
-    <text x="0" y="42" class="text-title">Yuki Kajiura — 「 Swordland 」</text>
-    <text x="0" y="60" class="text-sub">Sword Art Online: Aincrad Battle OST • Floor 100 Theme</text>
+  <!-- Track Information -->
+  <g transform="translate(122, 22)">
+    <!-- High-Res Pill -->
+    <rect x="0" y="0" width="132" height="17" rx="4" fill="#1C1833" stroke="#8A2BE2" stroke-width="0.8"/>
+    <polygon points="8,4.5 8,12.5 14,8.5" fill="#00FFFF"/>
+    <text x="18" y="12" font-family="'Consolas', monospace" font-size="9" font-weight="700" fill="#00FFFF">NOW PLAYING • HI-RES</text>
+
+    <!-- Title and Subtitle -->
+    <text x="0" y="38" class="song-title">Yuki Kajiura — 「 Swordland 」</text>
+    <text x="0" y="55" class="song-desc">Sword Art Online: Aincrad Battle OST • Floor 100 Theme</text>
   </g>
 
   <!-- Progress Bar Container -->
-  <g transform="translate(130, 96)">
-    <!-- Time Current -->
-    <text x="0" y="11" class="text-meta">01:43</text>
-
-    <!-- Progress Track Background -->
-    <rect x="38" y="5" width="440" height="5" rx="2.5" fill="#1A1C2E"/>
-    <!-- Progress Filled -->
-    <rect x="38" y="5" width="240" height="5" rx="2.5" fill="url(#progGrad)"/>
-    <!-- Glowing Progress Thumb/Dot -->
-    <circle class="glowing-dot" cx="278" cy="7.5" r="5" fill="#00FFFF" filter="url(#cyanGlow)"/>
-
-    <!-- Time Total -->
-    <text x="488" y="11" class="text-meta">03:15</text>
+  <g transform="translate(122, 88)">
+    <text x="0" y="7" class="time-code">01:43</text>
+    <!-- Background Track -->
+    <rect x="36" y="2" width="418" height="5" rx="2.5" fill="#1E1C2E"/>
+    <!-- Filled Progress -->
+    <rect x="36" y="2" width="224" height="5" rx="2.5" fill="url(#progressGrad)"/>
+    <!-- Glowing Playhead Thumb -->
+    <circle class="thumb" cx="260" cy="4.5" r="4.5" fill="#00FFFF" filter="url(#cyanGlow)"/>
+    <text x="464" y="7" class="time-code">03:15</text>
   </g>
 
-  <!-- Player Controls (Center Bottom) -->
-  <g transform="translate(300, 134)" text-anchor="middle">
-    <!-- Shuffle -->
-    <text x="-65" y="0" class="text-controls" font-size="14" fill="#7E869B">🔀</text>
-    <!-- Previous -->
-    <text x="-32" y="0" class="text-controls" font-size="15" fill="#A855F7">⏮</text>
-    <!-- Pause (Active Playing) with circular glow plate -->
-    <circle cx="0" cy="-5" r="12" fill="#8A2BE2" opacity="0.3"/>
-    <circle cx="0" cy="-5" r="10" fill="#1A1535" stroke="#00FFFF" stroke-width="1.2"/>
-    <text x="0" y="0" class="text-controls" font-size="13" font-weight="bold" fill="#00FFFF">❚❚</text>
-    <!-- Next -->
-    <text x="32" y="0" class="text-controls" font-size="15" fill="#A855F7">⏭</text>
-    <!-- Repeat -->
-    <text x="65" y="0" class="text-controls" font-size="14" fill="#00FFFF">🔁</text>
+  <!-- Vector Media Controls (Bottom Center) -->
+  <g transform="translate(325, 120)">
+    <!-- Shuffle (Arrows crossed) -->
+    <g transform="translate(-55, -8)">
+      <path d="M0 12 L6 6 M0 0 L6 6 L12 0 M6 6 L12 12 M9 0 L12 0 L12 3 M9 12 L12 12 L12 9" stroke="#6B7280" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    </g>
+    <!-- Previous (Dual Left Triangles) -->
+    <g transform="translate(-25, -7)">
+      <polygon points="12,0 3,5.5 12,11" fill="#A855F7"/>
+      <polygon points="5,0 -4,5.5 5,11" fill="#A855F7"/>
+    </g>
+    <!-- Pause Button Circle Plate -->
+    <g transform="translate(0, -2)">
+      <circle cx="0" cy="0" r="11" fill="#1B1736" stroke="#00FFFF" stroke-width="1.2"/>
+      <rect x="-4" y="-5" width="2.8" height="10" rx="1" fill="#00FFFF"/>
+      <rect x="1.2" y="-5" width="2.8" height="10" rx="1" fill="#00FFFF"/>
+    </g>
+    <!-- Next (Dual Right Triangles) -->
+    <g transform="translate(25, -7)">
+      <polygon points="-4,0 5,5.5 -4,11" fill="#A855F7"/>
+      <polygon points="3,0 12,5.5 3,11" fill="#A855F7"/>
+    </g>
+    <!-- Repeat (Loop Arrow) -->
+    <g transform="translate(55, -8)">
+      <path d="M0 6 A5 5 0 0 1 10 3 L12 0 M12 6 A5 5 0 0 1 2 9 L0 12" stroke="#00FFFF" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    </g>
   </g>
 </svg>
