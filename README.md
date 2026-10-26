@@ -85,7 +85,7 @@ Equipped Gear :
 ### 🎵 SAO Holographic Audio Stream
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=1xKjO7S1pC8" target="_blank" title="Play Swordland on YouTube">
+  <a href="[https://www.youtube.com/watch?v=1xKjO7S1pC8](https://www.youtube.com/watch?v=6Y1swEeFwYo)" target="_blank" title="Play Swordland on YouTube">
     <img src="assets/sao-music-player.svg" width="650" alt="SAO Holographic Music Stream" />
   </a>
 </p>
