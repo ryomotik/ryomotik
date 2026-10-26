@@ -1,10 +1,10 @@
 <div align="center">
 
 <!-- SAO Animated Cyber Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,14,24,30&height=240&section=header&text=RYOMOTIK&fontSize=70&fontColor=ffffff&fontAlignY=36&desc=「黒の剣士」%20THE%20BLACK%20SWORDSMAN%20•%20SOLO%20BEATER&descAlignY=58&descColor=C084FC" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,14,24,30&height=240&section=header&text=RYOMOTIK&fontSize=70&fontColor=ffffff&fontAlignY=36&desc=%E3%80%8C%E9%BB%92%E3%81%AE%E5%89%A3%E5%A3%AB%E3%80%8D%20THE%20BLACK%20SWORDSMAN%20%E2%80%A2%20SOLO%20BEATER&descAlignY=58&descColor=C084FC" width="100%" />
 
 <!-- Dynamic Animated Typing Title -->
-<img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=25&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&multiline=false&width=780&height=55&lines=The+Black+Swordsman+(黒の剣士);Solo+Player+•+Beater+•+Floor+100+Clearer;Unique+Skill%3A+Dual+Blades+[二刀流];Executing%3A+Starburst+Stream+[16-Hit+Combo];Mastering+Luau+•+Automation+•+Reverse+Engineering;Override+System+Authority%3A+Access+Granted." alt="Kirito Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=25&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&multiline=false&width=780&height=55&lines=The+Black+Swordsman+(%E9%BB%92%E3%81%AE%E5%89%A3%E5%A3%AB);Solo+Player+%E2%80%A2+Beater+%E2%80%A2+Floor+100+Clearer;Unique+Skill%3A+Dual+Blades+%5B%E4%BA%8C%E5%88%80%E6%B5%81%5D;Executing%3A+Starburst+Stream+[16-Hit+Combo];Mastering+Luau+%E2%80%A2+Automation+%E2%80%A2+Reverse+Engineering;Override+System+Authority%3A+Access+Granted." alt="Kirito Typing SVG" />
 
 <p align="center">
   <img src="https://img.shields.io/badge/PLAYER_CLASS-SOLO%20BEATER-8A2BE2?style=for-the-badge&logo=sword&logoColor=white" />
@@ -27,18 +27,23 @@
 ! [WARNING]: SYSTEM INTEGRITY CRITICAL — ANTICHEAT EVASION AT 100%
 ```
 
+<!-- Floor 100 Cinematic Banner -->
+<p align="center">
+  <img src="assets/kirito-pin.jpg" width="100%" alt="Kirito The Black Swordsman" style="border-radius: 12px; border: 1px solid #8A2BE2; max-height: 380px; object-fit: cover;" />
+</p>
+
 ---
 
-<!-- Side-by-Side Kirito Avatar & Holographic Character Menu -->
+<!-- Side-by-Side Dual Wielding GIF & Holographic Character Menu -->
 <table>
 <tr>
-<td width="42%" align="center" valign="middle">
-  <img src="https://media.giphy.com/media/13p7oj0N95IZu8/giphy.gif" width="100%" alt="Kirito Dual Blades" style="border-radius: 12px; border: 2px solid #8A2BE2;" />
+<td width="48%" align="center" valign="middle">
+  <img src="assets/kirito-dual-wield.gif" width="100%" alt="Kirito Dual Wielding" style="border-radius: 10px; border: 2px solid #8A2BE2;" />
   <br/><br/>
   <b>⚔️ 「 スターバースト・ストリーム 」</b><br/>
   <i>Starburst Stream — 16-Hit Dual Wielding Combo</i>
 </td>
-<td width="58%" valign="top">
+<td width="52%" valign="top">
 
 ```yaml
 [SAO SYSTEM MENU: PLAYER_PROFILE]
@@ -152,20 +157,12 @@ MASTERY: [■■■■■■■■■■■■■■■■■■■■] 100%
 
 ---
 
-### 📊 Battlefield Telemetry [GitHub Records]
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ryomotik&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B0C10&title_color=BB86FC&icon_color=00FFFF&text_color=C5C6C7" height="165" alt="Ryomotik Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryomotik&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B0C10&title_color=BB86FC&text_color=C5C6C7" height="165" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ryomotik&theme=tokyonight&hide_border=true&background=0B0C10&ring=BB86FC&fire=00FFFF&currStreakLabel=BB86FC" height="165" alt="Streak Stats" />
-</p>
-
----
-
 ### 🌌 「 THE SOLO PLAYER'S CREED 」
+
+<!-- Kirito Sword Art Wallpaper -->
+<p align="center">
+  <img src="assets/kirito-art.jpg" width="100%" alt="Kirito Battle Stance" style="border-radius: 12px; border: 1px solid #8A2BE2; max-height: 420px; object-fit: cover;" />
+</p>
 
 > *"Levels are just numbers. In this world, your strength is determined by the strength of your will."*  
 > *(«Уровни — это всего лишь цифры. В этом мире сила определяется силой твоей воли.»)*  
@@ -178,6 +175,19 @@ MASTERY: [■■■■■■■■■■■■■■■■■■■■] 100%
 > *There is no restart button. That's why I keep swinging my twin blades until the final floor falls."*  
 > *(«В виртуальном мире или в реальном — если ты погиб, всё кончено. Кнопки перезапуска нет. Вот почему я буду рубить парными клинками, пока не падёт последний этаж.»)*  
 > — **The Black Swordsman (黒の剣士)**
+
+---
+
+### 📊 Battlefield Telemetry [GitHub Records]
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ryomotik&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B0C10&title_color=BB86FC&icon_color=00FFFF&text_color=C5C6C7" height="165" alt="Ryomotik Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ryomotik&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B0C10&title_color=BB86FC&text_color=C5C6C7" height="165" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ryomotik&theme=tokyonight&hide_border=true&background=0B0C10&ring=BB86FC&fire=00FFFF&currStreakLabel=BB86FC" height="165" alt="Streak Stats" />
+</p>
 
 <br/>
 
